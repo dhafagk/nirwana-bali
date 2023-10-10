@@ -228,3 +228,12 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@media (min-height: 700px) {
+  .wrapper {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-top: 0;
+  }
+}

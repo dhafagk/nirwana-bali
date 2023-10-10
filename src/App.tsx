@@ -5,8 +5,8 @@ function App() {
   return (
     <>
       <div className="w-full snap-y h-screen overflow-y-scroll relative">
-        <div className="bg-main-bg bg-no-repeat bg-cover w-full min-h-screen px-2 min-[375px]:px-5 py-[70px] h-full snap-center">
-          <div className="flex flex-col gap-10 items-center text-center h-full">
+        <div className="bg-main-bg bg-no-repeat bg-cover w-full min-h-screen px-2 min-[375px]:px-5 h-full snap-center">
+          <div className="flex flex-col gap-10 items-center text-center h-full wrapper pt-10">
             <div className="max-w-[100px] mx-auto">
               <img
                 src="../img/LOGONT2PUTIH.png"
@@ -61,7 +61,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <a className="absolute bottom-0 mb-20 animate-bounce" href="#form">
+            <a className="absolute bottom-10 animate-bounce" href="#form">
               <img src={ChevronDown} className="w-10" />
             </a>
           </div>
