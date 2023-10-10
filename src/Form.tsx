@@ -87,7 +87,7 @@ const MyForm = () => {
 
           <button
             type="submit"
-            className="bg-[#D1B15C] font-gotham font-bold text-white pt-5 disabled:bg-gray-200"
+            className="bg-[#D1B15C] font-arial font-bold text-white disabled:bg-gray-200"
             disabled={loading}
           >
             Kirim
