@@ -32,7 +32,7 @@ const MyForm = () => {
 
   return (
     <div
-      className="h-screen bg-main-bg bg-no-repeat bg-cover w-full snap-center py-10 px-5"
+      className="h-screen bg-main-bg bg-no-repeat bg-cover w-full snap-start py-10 px-5"
       id="form"
     >
       <span className="font-gotham font-bold text-xl text-white">
