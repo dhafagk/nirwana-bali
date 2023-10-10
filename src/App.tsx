@@ -61,7 +61,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <a className="absolute bottom-0 mb-6 animate-bounce" href="#form">
+            <a className="absolute bottom-0 mb-20 animate-bounce" href="#form">
               <img src={ChevronDown} className="w-10" />
             </a>
           </div>

@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 
 const MyForm = () => {
   const { register, handleSubmit } = useForm();
+  const [loading, setLoading] = useState(false);
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const postData = async (url: string, body: any) => {
@@ -15,6 +17,7 @@ const MyForm = () => {
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const onSubmit = async (body: any) => {
+    setLoading(true);
     await postData("https://api-gateway.nirwanatextile.com/api/reservasi", body)
       .then(() => {
         alert("Data berhasil disimpan");
@@ -23,7 +26,8 @@ const MyForm = () => {
       .catch(() => {
         alert("Data gagal disimpan");
         location.reload();
-      });
+      })
+      .finally(() => setLoading(false));
   };
 
   return (
@@ -83,7 +87,8 @@ const MyForm = () => {
 
           <button
             type="submit"
-            className="bg-[#D1B15C] font-gotham font-bold text-white pt-5"
+            className="bg-[#D1B15C] font-gotham font-bold text-white pt-5 disabled:bg-gray-200"
+            disabled={loading}
           >
             Kirim
           </button>
