@@ -1,6 +1,7 @@
 import MyForm from "./Form";
 import List from "./List";
 import ChevronDown from "./assets/chevron-down.svg";
+import Link from "./assets/link.svg";
 
 function App() {
   return (
@@ -56,8 +57,10 @@ function App() {
                   <a
                     href="https://maps.app.goo.gl/8AihwiD1Px1GfJqLA"
                     target="_blank"
+                    className="flex w-full text-center justify-center gap-2 underline hover:text-blue-500 transition-all uppercase"
                   >
-                    JL. IMAM BONJOL NO.332, DENPASAR, BALI
+                    Jl Imam Bonjol no. 292, Denpasar, Bali
+                    <img src={Link} className="w-5" />
                   </a>
                 </div>
               </div>
