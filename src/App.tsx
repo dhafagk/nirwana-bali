@@ -55,7 +55,7 @@ function App() {
                 <div className="flex flex-col text-[#FAF0B2] font-times gap-2">
                   <span className="font-bold">LOCATION :</span>
                   <a
-                    href="https://maps.app.goo.gl/8AihwiD1Px1GfJqLA"
+                    href="https://maps.app.goo.gl/J8qCNyY8UaiBayGcA"
                     target="_blank"
                     className="flex w-full text-center justify-center gap-2 underline hover:text-blue-500 transition-all uppercase"
                   >
