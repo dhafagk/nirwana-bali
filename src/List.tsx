@@ -52,7 +52,7 @@ const List = () => {
         </div>
       ) : (
         <div>
-          <ul className="font-gotham font-medium pt-4">
+          <ul className="font-gotham font-medium pt-4 !text-white">
             {data?.map((yanghadir, index) => (
               <li key={index}>
                 {yanghadir.nama}{" "}
