@@ -4,7 +4,19 @@ const List = () => {
   const [data, setData] =
     useState<{ nama: string; perusahaan: string | null }[]>();
   const [page, setPage] = useState<number>(0);
-  const [hasMorePage, setHasMorePage] = useState(false);
+  const [pagination, setPaginaton] = useState<{
+    current_page: number;
+    has_more_page: boolean;
+    total_pages: number;
+    per_page: number;
+    total_items: number;
+  }>({
+    current_page: 0,
+    has_more_page: false,
+    total_pages: 0,
+    per_page: 0,
+    total_items: 0,
+  });
   const [loading, setLoading] = useState(true);
 
   const getData = async (url: string) => {
@@ -20,7 +32,7 @@ const List = () => {
     getData(
       `https://api-gateway.nirwanatextile.com/api/reservasi?page=${page + 1}`
     ).then((res) => {
-      setHasMorePage(res.pagination.has_more_page);
+      setPaginaton(res.pagination);
       setData(res.data);
       setLoading(false);
     });
@@ -55,7 +67,12 @@ const List = () => {
           <ul className="font-gotham font-medium pt-4 !text-white">
             {data?.map((yanghadir, index) => (
               <li key={index}>
-                <span>{index + 1 + 10 * page}. </span>
+                <span>
+                  {pagination?.total_items -
+                    index -
+                    pagination?.per_page * page}
+                  .{" "}
+                </span>
                 <span>
                   {yanghadir.nama}{" "}
                   {yanghadir.perusahaan && "- " + yanghadir.perusahaan}
@@ -72,7 +89,7 @@ const List = () => {
                 Prev
               </button>
             )}
-            {hasMorePage && (
+            {pagination?.has_more_page && (
               <button
                 className="bg-slate-200 text-gray-800"
                 onClick={() => setPage((state) => state + 1)}
