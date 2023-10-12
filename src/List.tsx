@@ -55,7 +55,7 @@ const List = () => {
           <ul className="font-gotham font-medium pt-4 !text-white">
             {data?.map((yanghadir, index) => (
               <li key={index}>
-                <span>{index + 1 + 10 * page}.</span>
+                <span>{index + 1 + 10 * page}. </span>
                 <span>
                   {yanghadir.nama}{" "}
                   {yanghadir.perusahaan && "- " + yanghadir.perusahaan}
