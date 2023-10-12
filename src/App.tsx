@@ -44,7 +44,7 @@ function App() {
                       <span className="tracking-wider">2023</span>
                     </div>
                     <div className="border-l border-[#D1B15C] h-28 ml-1" />
-                    <span className="min-[375px]:text-lg">AT 09.00 AM</span>
+                    <span className="min-[375px]:text-lg">AT 10.00 AM</span>
                   </div>
                   <img
                     src="../img/divider.png"
