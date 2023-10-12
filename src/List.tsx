@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const List = () => {
   const [data, setData] =
     useState<{ nama: string; perusahaan: string | null }[]>();
-  const [page, setPage] = useState<number>(1);
+  const [page, setPage] = useState<number>(0);
   const [hasMorePage, setHasMorePage] = useState(false);
   const [loading, setLoading] = useState(true);
 
@@ -18,7 +18,7 @@ const List = () => {
   useEffect(() => {
     setLoading(true);
     getData(
-      `https://api-gateway.nirwanatextile.com/api/reservasi?page=${page}`
+      `https://api-gateway.nirwanatextile.com/api/reservasi?page=${page + 1}`
     ).then((res) => {
       setHasMorePage(res.pagination.has_more_page);
       setData(res.data);
@@ -55,13 +55,16 @@ const List = () => {
           <ul className="font-gotham font-medium pt-4 !text-white">
             {data?.map((yanghadir, index) => (
               <li key={index}>
-                {yanghadir.nama}{" "}
-                {yanghadir.perusahaan && "- " + yanghadir.perusahaan}
+                <span>{index + 1 + 10 * page}.</span>
+                <span>
+                  {yanghadir.nama}{" "}
+                  {yanghadir.perusahaan && "- " + yanghadir.perusahaan}
+                </span>
               </li>
             ))}
           </ul>
           <div className="flex w-full gap-5 pt-5 justify-end">
-            {page !== 1 && (
+            {page !== 0 && (
               <button
                 className="bg-slate-200 text-gray-800"
                 onClick={() => setPage((state) => state - 1)}
