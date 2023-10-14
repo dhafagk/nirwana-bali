@@ -41,7 +41,7 @@ const List = () => {
   return (
     <div className="h-screen bg-main-bg bg-no-repeat bg-cover w-full snap-start py-10 px-5">
       <span className="font-gotham font-bold text-xl text-white">
-        Daftar Yang Akan Hadir
+        List Who Will Be Attending
       </span>
       {loading ? (
         <div className="animate-pulse">

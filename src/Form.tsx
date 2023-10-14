@@ -36,19 +36,19 @@ const MyForm = () => {
       id="form"
     >
       <span className="font-gotham font-bold text-xl text-white">
-        Konfirmasi Kehadiran
+        Attendance Confirmation
       </span>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="flex flex-col gap-6 pt-3">
           <input
             type="text"
-            placeholder="Nama"
+            placeholder="Name"
             {...register("nama", { required: true })}
             className="bg-gray-100 rounded p-2 text-gray-800 border border-solid border-gray-100 placeholder-slate-500"
           />
           <input
             type="tel"
-            placeholder="No. Hp / WA"
+            placeholder="Phone Number / Whatsapp"
             {...register("telp", {
               required: true,
               minLength: 6,
@@ -58,7 +58,7 @@ const MyForm = () => {
           />
           <input
             type="text"
-            placeholder="Nama Perusahaan"
+            placeholder="Company Name"
             {...register("perusahaan", {
               required: true,
             })}
@@ -72,7 +72,7 @@ const MyForm = () => {
                 {...register("hadir", { required: true })}
                 value="ya"
               />
-              <span className="pl-2">Hadir</span>
+              <span className="pl-2">Attend</span>
             </label>
 
             <label className="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3 hover:bg-[#E5B465] cursor-pointer ">
@@ -81,7 +81,7 @@ const MyForm = () => {
                 {...register("hadir", { required: true })}
                 value="tidak"
               />
-              <span className="pl-2">Tidak Hadir</span>
+              <span className="pl-2">Not Attend</span>
             </label>
           </div>
 
@@ -90,7 +90,7 @@ const MyForm = () => {
             className="bg-[#D1B15C] font-arial font-bold text-white disabled:bg-gray-200"
             disabled={loading}
           >
-            Kirim
+            Send
           </button>
         </div>
       </form>
