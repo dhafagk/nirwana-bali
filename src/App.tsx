@@ -41,12 +41,12 @@ function App() {
                   <div className="flex text-[#FAF0B2] justify-evenly items-center text-center font-gotham font-bold tracking-wider">
                     <span className="min-[375px]:text-xl">RABU</span>
                     <div className="border-l border-[#D1B15C] h-28 mr-1" />
-                    <div className="flex flex-col font-bold">
-                      <span className="tracking-wider">APRIL</span>
+                    <div className="flex flex-col font-bold justify-evenly">
+                      <span className="tracking-wide">APRIL</span>
                       <span className="text-5xl tracking-wider">
                         24
                       </span>
-                      <span className="tracking-wider">2024</span>
+                      <span className="tracking-wide">2024</span>
                     </div>
                     <div className="border-l border-[#D1B15C] h-28 ml-1" />
                     <span className="min-[375px]:text-xl">11.00<br/>WIB</span>
