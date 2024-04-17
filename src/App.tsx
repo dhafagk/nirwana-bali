@@ -18,7 +18,7 @@ function App() {
             </div>
             <div className="h-[50vh] flex flex-col gap-5 justify-center">
               <div>
-                <p className="font-gotham text-xl min-[375px]:text-lg text-white tracking-wider">YOU ARE INVITED TO</p>
+                <p className="font-gotham text-xl min-[375px]:text-lg text-white">YOU ARE INVITED TO</p>
                 <p className="font-gotham text-2xl min-[375px]:text-lg font-bold text-white tracking-wider">
                   GRAND OPENING STORE
                 </p>
@@ -38,7 +38,7 @@ function App() {
                     alt="divider"
                     className="translate-y-0.5"
                   />
-                  <div className="flex text-[#FAF0B2] justify-evenly items-center font-gotham font-bold tracking-wide">
+                  <div className="flex text-[#FAF0B2] justify-evenly items-center font-gotham font-bold tracking-wider">
                     <span className="min-[375px]:text-xl">RABU</span>
                     <div className="border-l border-[#D1B15C] h-28 mr-1" />
                     <div className="flex flex-col font-bold">
