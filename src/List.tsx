@@ -39,7 +39,7 @@ const List = () => {
   }, [page]);
 
   return (
-    <div className="h-screen bg-main-bg bg-no-repeat bg-cover w-full snap-start py-10 px-5 flex flex-col">
+    <div className="h-screen bg-main-bg bg-no-repeat bg-cover w-full snap-start py-10 px-5">
       <span className="font-gotham font-bold text-xl text-white">
         DAFTAR KEHADIRAN
       </span>
