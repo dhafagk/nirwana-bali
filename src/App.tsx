@@ -43,7 +43,7 @@ function App() {
                     <div className="border-l border-[#D1B15C] h-28 mr-1" />
                     <div className="flex flex-col font-bold">
                       <span className="tracking-wider">APRIL</span>
-                      <span className="text-6xl tracking-wide leading-[0.8] translate-x-0.5">
+                      <span className="text-5xl tracking-wider leading-[0.8] translate-x-0.5">
                         24
                       </span>
                       <span className="tracking-wider">2024</span>
