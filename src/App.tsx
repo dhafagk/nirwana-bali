@@ -64,7 +64,7 @@ function App() {
                     target="_blank"
                     className="flex w-full text-center justify-center gap-2 underline hover:text-blue-500 transition-all uppercase"
                   >
-                    Jl. HOS Cokroaminoto No.199, Daerah Istimewa Yogyakarta
+                    Jl. HOS Cokroaminoto No.199, Tegalrejo, Kota Yogyakarta
                     <img src={Link} className="w-5" />
                   </a>
                 </div>
