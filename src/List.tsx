@@ -65,13 +65,13 @@ const List = () => {
           <ul className="font-gotham font-medium gap-5 !text-white justify" style={{ backgroundColor: 'rgb(210, 9, 9, 0.8)', padding: '0.5rem'}}>
             {data?.map((yanghadir, index) => (
               <li key={index}>
-                <span className="font-gotham text-4xl min-[375px]:text-xl text-white tracking-wider">
+                <span className="font-gotham text-xl min-[375px]:text-xl text-white tracking-wider" style={{ fontWeight: 'normal'}}>
                   {pagination?.total_items -
                     index -
                     pagination?.per_page * page}
                   .{" "}
                 </span>
-                <span className="font-gotham text-4xl min-[375px]:text-xl text-white tracking-wider">
+                <span className="font-gotham text-xl min-[375px]:text-xl text-white tracking-wider" style={{ fontWeight: 'normal'}}>
                   {yanghadir.nama}{" "}
                   {yanghadir.perusahaan && " - " + yanghadir.perusahaan}
                 </span>

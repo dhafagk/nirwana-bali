@@ -39,7 +39,7 @@ function App() {
                     className="translate-y-0.5"
                   />
                   <div className="flex text-[#FAF0B2] justify-evenly items-center text-center font-gotham font-bold tracking-wider">
-                    <span className="min-[375px]:text-xl">RABU</span>
+                    <span className="text-lg">RABU</span>
                     <div className="border-l border-[#D1B15C] h-28 mr-1" />
                     <div className="flex flex-col font-bold justify-evenly">
                       <span className="tracking-wide">APRIL</span>
@@ -49,7 +49,7 @@ function App() {
                       <span className="tracking-wide">2024</span>
                     </div>
                     <div className="border-l border-[#D1B15C] h-28 ml-1" />
-                    <span className="min-[375px]:text-xl">11.00<br/>WIB</span>
+                    <span className="text-lg">11.00<br/>WIB</span>
                   </div>
                   <img
                     src="../img/divider.png"
