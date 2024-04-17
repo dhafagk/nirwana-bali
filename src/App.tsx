@@ -38,12 +38,12 @@ function App() {
                     alt="divider"
                     className="translate-y-0.5"
                   />
-                  <div className="flex text-[#FAF0B2] justify-evenly items-center font-gotham font-bold tracking-wider">
+                  <div className="flex text-[#FAF0B2] justify-evenly items-center text-center font-gotham font-bold tracking-wider">
                     <span className="min-[375px]:text-xl">RABU</span>
                     <div className="border-l border-[#D1B15C] h-28 mr-1" />
                     <div className="flex flex-col font-bold">
                       <span className="tracking-wider">APRIL</span>
-                      <span className="text-5xl tracking-wider leading-[0.8] translate-x-0.5">
+                      <span className="text-5xl tracking-wider">
                         24
                       </span>
                       <span className="tracking-wider">2024</span>
