@@ -8,7 +8,7 @@ function App() {
     <>
       <div className="w-full snap-y min-h-screen overflow-y-scroll">
         <div className="bg-main-bg bg-no-repeat bg-cover h-screen w-full px-2 min-[375px]:px-5 snap-start relative">
-          <div className="flex flex-col gap-20 items-center text-center h-50 wrapper pt-10">
+          <div className="flex flex-col gap-20 items-center text-center h-full wrapper pt-10">
             <div className="max-w-[100px] mx-auto">
               <img
                 src="../img/LOGONT2PUTIH.png"
