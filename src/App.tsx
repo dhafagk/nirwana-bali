@@ -19,7 +19,7 @@ function App() {
             <div className="h-[50vh] flex flex-col gap-5 justify-center">
               <div>
                 <p className="font-gotham text-xl min-[375px]:text-lg text-white">YOU ARE INVITED TO</p>
-                <p className="font-gotham text-2xl min-[375px]:text-lg font-bold text-white tracking-wider">
+                <p className="font-gotham text-3xl min-[375px]:text-xl font-bold text-white tracking-wider">
                   GRAND OPENING STORE
                 </p>
               </div>
