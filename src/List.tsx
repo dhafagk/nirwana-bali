@@ -39,15 +39,13 @@ const List = () => {
   }, [page]);
 
   return (
-    <div className="h-screen bg-main-bg bg-no-repeat bg-cover w-full snap-start py-10 px-5">
-      <span className="font-gotham font-bold text-xl text-white">
-        List Who Will Be Attending
+    <div className="h-screen bg-main-bg bg-no-repeat bg-cover w-full snap-start py-10 px-5 flex flex-col">
+      <span className="font-gotham font-bold text-2xl text-white pb-10">
+        DAFTAR KEHADIRAN
       </span>
       {loading ? (
-        <div className="animate-pulse">
+        <div className="animate-pulse" >
           <ul className="flex flex-col gap-5 pt-4">
-            <li className="h-4 bg-slate-500 w-full rounded-lg" />
-            <li className="h-4 bg-slate-500 w-full rounded-lg" />
             <li className="h-4 bg-slate-500 w-full rounded-lg" />
             <li className="h-4 bg-slate-500 w-full rounded-lg" />
             <li className="h-4 bg-slate-500 w-full rounded-lg" />
@@ -64,23 +62,23 @@ const List = () => {
         </div>
       ) : (
         <div>
-          <ul className="font-gotham font-medium pt-4 !text-white">
+          <ul className="font-gotham font-medium gap-5 !text-white justify" style={{ backgroundColor: 'rgb(210, 9, 9, 0.8)', padding: '0.5rem'}}>
             {data?.map((yanghadir, index) => (
               <li key={index}>
-                <span>
+                <span className="font-gotham text-4xl min-[375px]:text-xl text-white tracking-wider">
                   {pagination?.total_items -
                     index -
                     pagination?.per_page * page}
                   .{" "}
                 </span>
-                <span>
+                <span className="font-gotham text-4xl min-[375px]:text-xl text-white tracking-wider">
                   {yanghadir.nama}{" "}
-                  {yanghadir.perusahaan && "- " + yanghadir.perusahaan}
+                  {yanghadir.perusahaan && " - " + yanghadir.perusahaan}
                 </span>
               </li>
             ))}
           </ul>
-          <div className="flex w-full gap-5 pt-5 justify-end">
+          <div className="flex w-full gap-10 justify-end pt-5">
             {page !== 0 && (
               <button
                 className="bg-slate-200 text-gray-800"

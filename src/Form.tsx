@@ -35,11 +35,11 @@ const MyForm = () => {
       className="h-screen bg-main-bg bg-no-repeat bg-cover w-full snap-start py-10 px-5"
       id="form"
     >
-      <span className="font-gotham font-bold text-xl text-white">
-        Attendance Confirmation
+      <span className="font-gotham font-bold text-2xl text-white">
+        KONFIRMASI KEHADIRAN
       </span>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="flex flex-col gap-6 pt-3">
+        <div className="flex flex-col gap-6 pt-10">
           <input
             type="text"
             placeholder="Name"
@@ -48,7 +48,7 @@ const MyForm = () => {
           />
           <input
             type="tel"
-            placeholder="Phone Number / Whatsapp"
+            placeholder="Nomor Whatsapp"
             {...register("telp", {
               required: true,
               minLength: 6,
@@ -58,7 +58,7 @@ const MyForm = () => {
           />
           <input
             type="text"
-            placeholder="Company Name"
+            placeholder="Domisili"
             {...register("perusahaan", {
               required: true,
             })}
@@ -66,31 +66,31 @@ const MyForm = () => {
           />
 
           <div>
-            <label className="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3 hover:bg-[#E5B465] cursor-pointer ">
+            <label className="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3 hover:bg-[#D20909] hover:text-white cursor-pointer ">
               <input
                 type="radio"
                 {...register("hadir", { required: true })}
                 value="ya"
               />
-              <span className="pl-2">Attend</span>
+              <span className="pl-2">Hadir</span>
             </label>
 
-            <label className="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3 hover:bg-[#E5B465] cursor-pointer ">
+            <label className="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3 hover:bg-[#D20909] hover:text-white cursor-pointer ">
               <input
                 type="radio"
                 {...register("hadir", { required: true })}
                 value="tidak"
               />
-              <span className="pl-2">Not Attend</span>
+              <span className="pl-2">Tidak Hadir</span>
             </label>
           </div>
 
           <button
             type="submit"
-            className="bg-[#D1B15C] font-arial font-bold text-white disabled:bg-gray-200"
+            className="bg-[#D20909] font-arial font-bold text-white disabled:bg-gray-200"
             disabled={loading}
           >
-            Send
+            Kirim
           </button>
         </div>
       </form>

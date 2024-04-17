@@ -3,7 +3,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     backgroundImage: {
-      "main-bg": "url('../img/bg.png')",
+      "main-bg": "url('../img/fabric-background.jpg')",
     },
     fontFamily: {
       roxborough: "RoxboroughCF, Arial, sans-serif",
