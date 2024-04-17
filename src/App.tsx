@@ -16,7 +16,7 @@ function App() {
                 alt="Nirwana Textile"
               />
             </div>
-            <div className="h-[50vh] flex flex-col gap-2 justify-center">
+            <div className="h-[50vh] flex flex-col gap-5 justify-center">
               <div>
                 <p className="font-gotham text-xl min-[375px]:text-lg text-white tracking-wider">YOU ARE INVITED TO</p>
                 <p className="font-gotham text-2xl min-[375px]:text-lg font-bold text-white tracking-wider">
