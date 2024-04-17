@@ -90,7 +90,7 @@ const MyForm = () => {
             className="bg-[#D20909] font-arial font-bold text-white disabled:bg-gray-200"
             disabled={loading}
           >
-            Kirim
+            KIRIM
           </button>
         </div>
       </form>
