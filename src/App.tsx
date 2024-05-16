@@ -6,31 +6,39 @@ import Link from "./assets/link.svg";
 function App() {
   return (
     <>
+    
       <div className="w-full snap-y min-h-screen overflow-y-scroll">
+        
         <div className="bg-main-bg bg-no-repeat bg-cover h-screen w-full px-2 min-[375px]:px-5 snap-start relative">
           <div className="flex flex-col items-center text-center h-50 wrapper pt-10 gap-20">
-            <div className="max-w-[100px] mx-auto">
+            <div className="max-w-[100px] mx-auto flex" >
               <img
                 src="../img/LOGONT2PUTIH.png"
-                className="w-full h-full"
+                className=" w-full h-full"
                 alt="Nirwana Textile"
               />
+             
             </div>
+            
             <div className="h-[50vh] flex flex-col gap-5 justify-center">
-              <div>
-                <p className="font-gotham text-xl min-[375px]:text-lg text-white">YOU ARE INVITED TO</p>
-                <p className="font-gotham text-3xl min-[375px]:text-xl font-bold text-white tracking-wider">
+         
+                <p className="font-gotham text-xl min-[375px]:text-lg text-white font-bold">YOU ARE INVITED TO</p>
+                {/* <p className="font-gotham text-3xl min-[375px]:text-xl font-bold text-white tracking-wider">
                   GRAND OPENING STORE
-                </p>
-              </div>
+                </p> */}
               <div>
-                <div  style={{ backgroundColor: '#d20909', padding: '0.5rem'}}>
-                  <h2 className="font-times text-white text-2xl tracking-wide font-bold">
-                    NIRWANA TEXTILE
+                <div >
+                <img
+              src="../img/KSJ.png"
+              className="w-full h-full animate-pulse"
+              alt="Nirwana Textile"
+            />
+                  {/* <h2 className="font-gotham text-white text-2xl font-bold tracking-wide">
+                  KENDURI SABLON 
                   </h2>
-                  <h2 className="font-gotham text-white text-xl font-bold tracking-wide">
-                    JOGJAKARTA
-                  </h2>
+                  <h2 className="font-gotham text-white text-2xl font-bold tracking-wide">
+                  JOGJAKARTA #02
+                  </h2> */}
                 </div>
                 <div className="py-5">
                   <img
@@ -38,18 +46,16 @@ function App() {
                     alt="divider"
                     className="translate-y-0.5"
                   />
-                  <div className="flex text-[#FAF0B2] justify-evenly items-center text-center font-gotham font-bold tracking-wider">
-                    <span className="text-lg">RABU</span>
-                    <div className="border-l border-[#D1B15C] h-28 mr-1" />
+                  <div className="flex justify-evenly items-center text-center font-gotham font-bold tracking-wider">
                     <div className="flex flex-col font-bold justify-evenly">
-                      <span className="tracking-wide">APRIL</span>
+                     
                       <span className="text-5xl tracking-wider">
-                        24
+                        8-9
                       </span>
-                      <span className="tracking-wide">2024</span>
+                      <span className="tracking-wide">JUNI 2024</span>
                     </div>
-                    <div className="border-l border-[#D1B15C] h-28 ml-1" />
-                    <span className="text-lg">11.00<br/>WIB</span>
+                    {/* <div className="border-l border-[#D1B15C] h-28 ml-1" />
+                    <span className="text-lg">11.00<br/>WIB</span> */}
                   </div>
                   <img
                     src="../img/divider.png"
@@ -60,11 +66,11 @@ function App() {
                 <div className="flex flex-col text-white font-gotham gap-2">
                   <h2 className="font-bold text-xl">LOKASI :</h2>
                   <a
-                    href="https://maps.app.goo.gl/K5QkqXijHw1R7JXb8"
+                    href="https://maps.app.goo.gl/h4pBSb6TJKx5EwyW6"
                     target="_blank"
                     className="flex w-full text-center justify-center gap-2 underline hover:text-blue-500 transition-all uppercase"
                   >
-                    Jl. HOS Cokroaminoto No.199, Tegalrejo, Kota Yogyakarta
+                   JOGJA EXPO CENTER
                     <img src={Link} className="w-5" />
                   </a>
                 </div>

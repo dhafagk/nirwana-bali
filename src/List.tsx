@@ -39,10 +39,11 @@ const List = () => {
   }, [page]);
 
   return (
-    <div className="h-screen bg-main-bg bg-no-repeat bg-cover w-full snap-start py-10 px-5">
-      <span className="font-gotham font-bold text-xl text-white">
-        DAFTAR KEHADIRAN
+    <div className="h-screen bg-main-bg bg-no-repeat bg-cover w-full snap-start py-5 px-3">
+      <span className="font-gotham font-bold text-2xl text-white" >
+        GUEST LIST
       </span>
+      <div style={{paddingBottom: '5vh'}} ></div>
       {loading ? (
         <div className="animate-pulse" >
           <ul className="flex flex-col gap-5 pt-4">
@@ -62,16 +63,16 @@ const List = () => {
         </div>
       ) : (
         <div>
-          <ul className="font-gotham font-medium gap-5 !text-white justify" style={{ backgroundColor: 'rgb(210, 9, 9, 0.8)', padding: '0.5rem'}}>
+          <ul className="font-gotham font-medium gap-5 !text-white justify" style={{ padding: '1rem', backgroundColor: 'rgb(0, 0, 0, 0.8)'}}>
             {data?.map((yanghadir, index) => (
-              <li key={index}>
-                <span className="font-gotham text-xl min-[375px]:text-xl text-white tracking-wider" style={{ fontWeight: 'normal'}}>
+              <li key={index} style={{ paddingBottom: '0.5rem'}}>
+                <span className="font-gotham text-lg min-[375px]:text-lg text-white tracking-wider" style={{ fontWeight: 'normal'}}>
                   {pagination?.total_items -
                     index -
                     pagination?.per_page * page}
                   .{" "}
                 </span>
-                <span className="font-gotham text-xl min-[375px]:text-xl text-white tracking-wider" style={{ fontWeight: 'normal'}}>
+                <span className="font-gotham text-lg min-[375px]:text-lg text-white tracking-wider" style={{ fontWeight: 'normal'}}>
                   {yanghadir.nama}{" "}
                   {yanghadir.perusahaan && " - " + yanghadir.perusahaan}
                 </span>
