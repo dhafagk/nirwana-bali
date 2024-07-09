@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <div className="w-full snap-y min-h-screen overflow-y-scroll">
-        <div className="bg-main-bg bg-no-repeat bg-cover h-screen w-full px-2 min-[375px]:px-5 snap-start relative" style={{ backgroundImage: 'url("/public/img/web red.png")' }}>
+        <div className="bg-main-bg bg-no-repeat bg-cover h-screen w-full px-2 min-[375px]:px-5 snap-start relative" style={{ backgroundImage: 'url("../public/img/web red.png")' }}>
           <div className="flex flex-col items-center text-center h-50 wrapper pt-10 gap-20">
             <div className="max-w-[100px] mx-auto">
               <img
@@ -56,7 +56,7 @@ function App() {
                     className="-translate-y-0.5"
                   />
                 </div>
-                <div className="flex flex-col text-white font-gotham gap-2"style={{ backgroundImage: 'url("/public/img/web red.png")' }}>
+                <div className="flex flex-col text-white font-gotham gap-2"style={{ backgroundImage: 'url("../public/img/web red.png")' }}>
                   <h2 className="font-bold text-xl">LOKASI :</h2>
                   <a
                     href="https://maps.app.goo.gl/J6MigS2GMkYyymUt7"
