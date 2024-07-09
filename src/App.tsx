@@ -23,7 +23,7 @@ function App() {
                 </p>
               </div>
               <div>
-                <div  style={{ backgroundColor: '#d20909', padding: '0.5rem'}}>
+                <div  style={{ backgroundColor: '#d20909', padding: '0.5rem', display: 'grid', justifyItems: 'center', alignItems: 'center', justifyContent: 'center', alignContent: 'center'}}>
                   <h2 className="font-times text-white text-2xl tracking-wide font-bold">
                     NIRWANA TEXTILE
                   </h2>
