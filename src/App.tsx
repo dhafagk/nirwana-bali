@@ -23,15 +23,21 @@ function App() {
                 </p>
               </div>
               <div>
-                <div  style={{ backgroundColor: '#d20909', padding: '0.5rem', display: 'grid', justifyItems: 'center', alignItems: 'center', justifyContent: 'center', alignContent: 'center'}}>
+                <div  style={{ backgroundColor: '#400000', padding: '0.5rem', display: 'grid', justifyItems: 'center', alignItems: 'center', justifyContent: 'center', alignContent: 'center'}}>
                   <h2 className="font-times text-white text-2xl tracking-wide font-bold">
                     NIRWANA TEXTILE
                   </h2>
                   <h2 className="font-gotham text-white text-4xl font-bold tracking-wide">
                     SURABAYA
                   </h2>
-                  <span style={{fontWeight: '400', fontSize: '12px'}}>*Konfirmasi kehadiran paling lambat tgl 16 Juli 2024</span>
                 </div>
+                <div className="pb-2 pt-2">
+                  
+                </div>
+                <div  style={{ backgroundColor: '#d20909', padding: '0.2rem'}}>
+                  <span style={{    fontWeight: '400', fontSize: '16px', color: 'white'}}>*Mohon konfirmasi kehadirannya paling lambat tgl 16 Juli 2024</span>
+                </div>
+                
                 <div className="py-5">
                   <img
                     src="../img/divider.png"
