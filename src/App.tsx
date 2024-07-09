@@ -27,7 +27,7 @@ function App() {
                   <h2 className="font-times text-white text-2xl tracking-wide font-bold">
                     NIRWANA TEXTILE
                   </h2>
-                  <h2 className="font-gotham text-white text-xl font-bold tracking-wide">
+                  <h2 className="font-gotham text-white text-4xl font-bold tracking-wide">
                     SURABAYA
                   </h2>
                   <p style={{fontWeight: '100', fontSize: '12px'}}>*Konfirmasi kehadiran paling lambat tgl 16 Juli 2024</p>
@@ -39,7 +39,7 @@ function App() {
                     className="translate-y-0.5"
                   />
                   <div className="flex text-[#FAF0B2] justify-evenly items-center text-center font-gotham font-bold tracking-wider">
-                    <span className="text-lg">SABTU</span>
+                    <span className="text-2xl">SABTU</span>
                     <div className="border-l border-[#D1B15C] h-28 mr-1" />
                     <div className="flex flex-col font-bold justify-evenly">
                       <span className="tracking-wide">JULI</span>
@@ -49,7 +49,7 @@ function App() {
                       <span className="tracking-wide">2024</span>
                     </div>
                     <div className="border-l border-[#D1B15C] h-28 ml-1" />
-                    <span className="text-lg">11.30<br/>WIB</span>
+                    <span className="text-2xl">11.30<br/>WIB</span>
                   </div>
                   <img
                     src="../img/divider.png"
