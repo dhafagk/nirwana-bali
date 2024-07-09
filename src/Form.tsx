@@ -33,7 +33,7 @@ const MyForm = () => {
   return (
     <div
       className="h-screen bg-main-bg bg-no-repeat bg-cover w-full snap-start py-5 px-3"
-      id="form" style={{ backgroundImage: 'url("../public/img/webred.png")' }}
+      id="form" style={{ backgroundImage: 'url("../img/webred.png")' }}
     >
       <span className="font-gotham font-bold text-xl text-white">
         GUEST BOOK

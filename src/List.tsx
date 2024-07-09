@@ -39,7 +39,7 @@ const List = () => {
   }, [page]);
 
   return (
-    <div className="h-screen bg-main-bg bg-no-repeat bg-cover w-full snap-start py-5 px-3" style={{ backgroundImage: 'url("../public/img/webred.png")' }}>
+    <div className="h-screen bg-main-bg bg-no-repeat bg-cover w-full snap-start py-5 px-3" style={{ backgroundImage: 'url("../img/webred.png")' }}>
       <span className="font-gotham font-bold text-2xl text-white" >
         GUEST LIST
       </span>
