@@ -32,17 +32,17 @@ const MyForm = () => {
 //cek
   return (
     <div
-      className="h-screen bg-main-bg bg-no-repeat bg-cover w-full snap-start py-10 px-5"
+      className="h-screen bg-main-bg bg-no-repeat bg-cover w-full snap-start py-5 px-3"
       id="form"
     >
       <span className="font-gotham font-bold text-xl text-white">
-        KONFIRMASI KEHADIRAN
+        GUEST BOOK
       </span>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="flex flex-col gap-6 pt-10">
           <input
             type="text"
-            placeholder="Name"
+            placeholder="Nama"
             {...register("nama", { required: true })}
             className="bg-gray-100 rounded p-2 text-gray-800 border border-solid border-gray-100 placeholder-slate-500"
           />
