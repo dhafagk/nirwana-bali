@@ -29,7 +29,7 @@ function App() {
                     NIRWANA TEXTILE
                   </h2>
                   <h2 className="font-gotham text-white text-xl font-bold tracking-wide">
-                    JOGJAKARTA
+                    SURABAYA
                   </h2>
                 </div>
                 <div className="py-5">
@@ -39,17 +39,17 @@ function App() {
                     className="translate-y-0.5"
                   />
                   <div className="flex text-[#FAF0B2] justify-evenly items-center text-center font-gotham font-bold tracking-wider">
-                    <span className="text-lg">RABU</span>
+                    <span className="text-lg">SABTU</span>
                     <div className="border-l border-[#D1B15C] h-28 mr-1" />
                     <div className="flex flex-col font-bold justify-evenly">
-                      <span className="tracking-wide">APRIL</span>
+                      <span className="tracking-wide">JULI</span>
                       <span className="text-5xl tracking-wider">
-                        24
+                        20
                       </span>
                       <span className="tracking-wide">2024</span>
                     </div>
                     <div className="border-l border-[#D1B15C] h-28 ml-1" />
-                    <span className="text-lg">11.00<br/>WIB</span>
+                    <span className="text-lg">11.30<br/>WIB</span>
                   </div>
                   <img
                     src="../img/divider.png"
@@ -60,11 +60,11 @@ function App() {
                 <div className="flex flex-col text-white font-gotham gap-2">
                   <h2 className="font-bold text-xl">LOKASI :</h2>
                   <a
-                    href="https://maps.app.goo.gl/K5QkqXijHw1R7JXb8"
+                    href="https://maps.app.goo.gl/J6MigS2GMkYyymUt7"
                     target="_blank"
                     className="flex w-full text-center justify-center gap-2 underline hover:text-blue-500 transition-all uppercase"
                   >
-                    Jl. HOS Cokroaminoto No.199, Tegalrejo, Kota Yogyakarta
+                    Jl. Dr. Ir. H. Soekarno No. 299, Kedung Baruk, Kec. Rungkut, Surabaya, Jawa Timur 60298
                     <img src={Link} className="w-5" />
                   </a>
                 </div>
