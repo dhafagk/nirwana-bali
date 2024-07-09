@@ -30,7 +30,7 @@ function App() {
                   <h2 className="font-gotham text-white text-4xl font-bold tracking-wide">
                     SURABAYA
                   </h2>
-                  <span style={{fontWeight: '100', fontSize: '12px'}}>*Konfirmasi kehadiran paling lambat tgl 16 Juli 2024</span>
+                  <span style={{fontWeight: '400', fontSize: '12px'}}>*Konfirmasi kehadiran paling lambat tgl 16 Juli 2024</span>
                 </div>
                 <div className="py-5">
                   <img
