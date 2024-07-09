@@ -24,10 +24,10 @@ function App() {
               </div>
               <div>
                 <div  style={{ backgroundColor: '#d20909', padding: '0.5rem'}}>
-                  <h2 className="font-times text-white text-2xl tracking-wide font-bold">
+                  <h2 className="font-times text-white text-2xl tracking-wide font-bold pb-1">
                     NIRWANA TEXTILE
                   </h2>
-                  <h2 className="font-gotham text-white text-4xl font-bold tracking-wide">
+                  <h2 className="font-gotham text-white text-4xl font-bold tracking-wide pb-1">
                     SURABAYA
                   </h2>
                   <p style={{fontWeight: '100', fontSize: '12px'}}>*Konfirmasi kehadiran paling lambat tgl 16 Juli 2024</p>
