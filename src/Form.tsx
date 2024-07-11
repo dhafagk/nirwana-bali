@@ -1,9 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 
 const MyForm = () => {
   const { register, handleSubmit } = useForm();
   const [loading, setLoading] = useState(false);
+  const [isDisabled, setIsDisabled] = useState(false);
+
+  useEffect(() => {
+    const currentDate = new Date();
+    const cutoffDate = new Date("2024-07-16");
+    if (currentDate > cutoffDate) {
+      setIsDisabled(true);
+    }
+  }, []);
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const postData = async (url: string, body: any) => {
@@ -29,7 +38,7 @@ const MyForm = () => {
       })
       .finally(() => setLoading(false));
   };
-//cek
+
   return (
     <div
       className="h-screen bg-main-bg bg-no-repeat bg-cover w-full snap-start py-5 px-3"
@@ -45,6 +54,7 @@ const MyForm = () => {
             placeholder="Nama"
             {...register("nama", { required: true })}
             className="bg-gray-100 rounded p-2 text-gray-800 border border-solid border-gray-100 placeholder-slate-500"
+            disabled={isDisabled}
           />
           <input
             type="tel"
@@ -55,6 +65,7 @@ const MyForm = () => {
               maxLength: 13,
             })}
             className="bg-gray-100 rounded p-2 text-gray-800 border border-solid border-gray-100 placeholder-slate-500"
+            disabled={isDisabled}
           />
           <input
             type="text"
@@ -63,6 +74,7 @@ const MyForm = () => {
               required: true,
             })}
             className="bg-gray-100 rounded p-2 text-gray-800 border border-solid border-gray-100 placeholder-slate-500"
+            disabled={isDisabled}
           />
 
           <div>
@@ -71,6 +83,7 @@ const MyForm = () => {
                 type="radio"
                 {...register("hadir", { required: true })}
                 value="ya"
+                disabled={isDisabled}
               />
               <span className="pl-2">Hadir</span>
             </label>
@@ -80,6 +93,7 @@ const MyForm = () => {
                 type="radio"
                 {...register("hadir", { required: true })}
                 value="tidak"
+                disabled={isDisabled}
               />
               <span className="pl-2">Tidak Hadir</span>
             </label>
@@ -88,12 +102,17 @@ const MyForm = () => {
           <button
             type="submit"
             className="bg-[#D20909] font-arial font-bold text-white disabled:bg-gray-200"
-            disabled={loading}
+            disabled={loading || isDisabled}
           >
             KIRIM
           </button>
         </div>
       </form>
+      {isDisabled && (
+        <p className="text-white font-bold text-xl mt-4">
+          Formulir sudah tidak dapat diisi setelah tanggal 16 Juli 2024.
+        </p>
+      )}
     </div>
   );
 };
