@@ -8,7 +8,7 @@ const MyForm = () => {
 
   useEffect(() => {
     const currentDate = new Date();
-    const cutoffDate = new Date("2024-07-16");
+    const cutoffDate = new Date("2024-07-17");
     if (currentDate > cutoffDate) {
       setIsDisabled(true);
     }
@@ -110,7 +110,7 @@ const MyForm = () => {
       </form>
       {isDisabled && (
         <p className="text-white font-bold text-xl mt-4">
-          Formulir sudah tidak dapat diisi setelah tanggal 16 Juli 2024.
+          16 Juli 2024 adalah pengisian form terakhir.
         </p>
       )}
     </div>
